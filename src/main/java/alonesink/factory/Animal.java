@@ -1,4 +1,4 @@
-package temp;
+package alonesink.factory;
 
 /*
 * Created by  WangDi  on 2017/9/4

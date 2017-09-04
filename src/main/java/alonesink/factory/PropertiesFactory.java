@@ -1,4 +1,4 @@
-package temp;
+package alonesink.factory;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

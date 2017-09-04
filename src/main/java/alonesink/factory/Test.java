@@ -1,9 +1,4 @@
-package temp;
-
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Properties;
+package alonesink.factory;
 
 /*
 * Created by  WangDi  on 2017/9/4 0004

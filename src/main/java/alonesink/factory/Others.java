@@ -1,10 +1,9 @@
-package temp;
+package alonesink.factory;
 
 /*
 * Created by  WangDi  on 2017/9/4 0004
 */
-public class Pig implements Animal{
-
+public class Others implements Animal{
     @Override
     public Integer sleepHours() {
         return null;
@@ -13,6 +12,6 @@ public class Pig implements Animal{
     @Override
     public void run() {
 
-        System.out.println("Pig is Running!");
+        System.out.println("Others is Running!");
     }
 }
