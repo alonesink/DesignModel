@@ -6,6 +6,7 @@ package alonesink.singleton;
 
 public class Lazy {
 
+    private static String str =  "test";
     private static Lazy lazy1 = null;
     private static Lazy lazy2 = null;
     private static Lazy lazy3 = null;
@@ -48,10 +49,10 @@ public class Lazy {
         Integer i = 0;
         if (lazy3 == null){
 
-            synchronized (Lazy.class){
-                synchronized (i){
-                    i++;
-                }
+            //不可用内部定义的变量，用使用同一把锁，唯一性，但是此方法不能保证与getLazy2()同步。不是同一把锁,将锁换为Lazy.class
+            synchronized (str){
+
+                i++;
                 return new Lazy();
             }
 
@@ -60,4 +61,6 @@ public class Lazy {
             return lazy3;
         }
     }
+
+
 }
